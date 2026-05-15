@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cardápio digital do Tempero da Sandra, com quentinhas caseiras aos sábados em São Bento, Caxias.">
+  <title>Tempero da Sandra | Cardápio Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#topo" aria-label="Ir para o início">
+      <img src="logo-sandra.png" alt="Logo Tempero da Sandra" class="brand-logo">
+      <span>
+        <strong>Tempero da Sandra</strong>
+        <small>O sabor da comida feita em casa!</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#porcoes">Porções</a>
+      <a href="#entrega">Entrega</a>
+      <a class="nav-order" href="#" data-whatsapp-generic>Pedir agora</a>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="mini-badge">Pedido pelo WhatsApp</span>
+        <p class="eyebrow">Quentinhas caseiras aos sábados</p>
+        <h1 id="hero-title">Tempero da Sandra</h1>
+        <p>Comida caseira feita com carinho para o seu sábado.</p>
+        <a class="button button-whatsapp" href="#" data-whatsapp-generic>
+          Pedir agora no WhatsApp
+        </a>
+      </div>
+      <div class="hero-card" aria-label="Informações rápidas">
+        <span class="mini-badge">Entrega grátis</span>
+        <strong>São Bento</strong>
+        <small>Rua Paulo Gracindo 50, São Bento - Caxias</small>
+      </div>
+    </section>
+
+    <section class="section active-dish-section" aria-labelledby="active-title">
+      <div class="section-heading">
+        <p class="eyebrow">Próximo sábado</p>
+        <h2 id="active-title">Prato do próximo sábado</h2>
+      </div>
+      <div id="activeDish" class="active-dish" aria-live="polite"></div>
+    </section>
+
+    <section id="cardapio" class="section" aria-labelledby="menu-title">
+      <div class="section-heading">
+        <p class="eyebrow">Escolha seu sábado</p>
+        <h2 id="menu-title">Cardápio do mês</h2>
+      </div>
+      <div id="menuGrid" class="menu-grid"></div>
+    </section>
+
+    <section id="porcoes" class="section portions" aria-labelledby="portions-title">
+      <div class="section-heading">
+        <p class="eyebrow">Porções</p>
+        <h2 id="portions-title">Tamanhos disponíveis</h2>
+      </div>
+      <div class="portion-grid">
+        <article class="portion-card reveal">
+          <span class="size-badge">M</span>
+          <h3>Preço M</h3>
+          <strong>Porção média</strong>
+          <p>Serve 1 pessoa</p>
+        </article>
+        <article class="portion-card reveal">
+          <span class="size-badge">G</span>
+          <h3>Preço G</h3>
+          <strong>Porção grande</strong>
+          <p>Serve até 2 pessoas</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="entrega" class="section delivery" aria-labelledby="delivery-title">
+      <div>
+        <span class="mini-badge">Entrega grátis</span>
+        <p class="eyebrow">Entrega</p>
+        <h2 id="delivery-title">Entrega grátis na região de São Bento</h2>
+        <p>Rua Paulo Gracindo 50, São Bento - Caxias</p>
+      </div>
+      <a class="button button-whatsapp" href="#" data-whatsapp-generic>Chamar no WhatsApp</a>
+    </section>
+  </main>
+
+  <a class="floating-whatsapp" href="#" data-whatsapp-generic aria-label="Pedir pelo WhatsApp">
+    WhatsApp
+  </a>
+
+  <footer class="site-footer">
+    <p>WhatsApp: <a href="https://wa.me/5521975587123" target="_blank" rel="noopener">+55 21 97558-7123</a></p>
+    <a class="developer" href="https://k1ngberner.github.io/produ-o-portfolio/" target="_blank" rel="noopener">
+      <img src="rb-logo.jpg" alt="Logo Reinhold Berner">
+      <span>Site desenvolvido por Reinhold Berner</span>
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
